@@ -35,8 +35,9 @@ export function SignupForm(props) {
             }),
         })
             .then((res) => res.json())
-            .then((user) => {
-                window.location.href = './';
+            .then(({usr}) => {
+                window.alert(`Usuario registrado ${usr.name}!`);
+                window.location.reload();
             });
     };
     return (

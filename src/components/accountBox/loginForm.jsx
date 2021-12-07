@@ -46,7 +46,7 @@ export function LoginForm(props) {
             <FormContainer>
                 <Input
                     type='email'
-                    placeholder='Email'
+                    placeholder='Username'
                     name='username'
                     value={username}
                     onChange={handleInputChange}
@@ -62,12 +62,12 @@ export function LoginForm(props) {
             <Marginer direction='vertical' margin={10} />
             <Marginer direction='vertical' margin='1.6em' />
             <SubmitButton type='submit' onClick={handleSubmit}>
-                Signin
+                Sign in
             </SubmitButton>
             <Marginer direction='vertical' margin='1em' />
             <MutedLink>
                 Don't have an accoun?{' '}
-                <BoldLink onClick={switchToSignup}>Signup</BoldLink>
+                <BoldLink onClick={switchToSignup}>Sign up</BoldLink>
             </MutedLink>
         </BoxContainer>
     );
